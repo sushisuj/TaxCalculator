@@ -51,8 +51,8 @@ def save_incomes():
     
     print(a, b)
     # this is where we save the inputs in a db
-    import db_manager
-    db_manager.addIncomes(1, a, b)
+    import db_incomeManager
+    db_incomeManager.addIncomes(1, a, b)
 
     if a < 0 or b < 0:
       return jsonify({"error2": "Please provide positive income"}), 400

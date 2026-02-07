@@ -23,6 +23,5 @@ def deleteIncomes():
     cursor.execute("DELETE FROM Incomes")    
     connection.commit()
 
-
 if __name__ == "__main__":
     retrieveIncomes()
